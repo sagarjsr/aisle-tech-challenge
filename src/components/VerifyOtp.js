@@ -55,7 +55,7 @@ const VerifyOtp = (props) => {
     const classes = useStyles();
 
     const [otp, setOtp] = useState("");
-    const [timer, setTimer] = useState(15);
+    const [timer, setTimer] = useState(59);
     const phoneNumber = props.location?.state || "";
 
     const history = useHistory();

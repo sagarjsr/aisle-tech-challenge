@@ -147,9 +147,9 @@ const Home = (props) => {
                     {
                         details.likes.profiles.map(profile => (
                             <Grid item xs={6} sm={6} md={3} lg={3}>
-                    <div style={{ backgroundImage: `url(${profile.avatar})`, filter:' blur(8px)',  border : '1px solid black',  height : "22vh", backgroundSize : "cover", borderRadius : "10px"}}>
+                    <div style={{ backgroundImage: `linear-gradient(90deg, rgba(105,105,105,1), rgba(105,105,105,0.95), rgba(105,105,105,0.9)),url(${profile.avatar})`,  border : '1px solid black',  height : "22vh", backgroundSize : "cover", borderRadius : "10px"}}>
                        
-                    <div className={classes.detailDivBlur} >
+                    <div className={classes.detailDivBlur}>
                                 <h3 className={classes.blurName} >{profile.first_name}</h3>
 
                                 

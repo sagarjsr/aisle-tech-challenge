@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# This applicaion Strickly Devloveped for Mobile View Only 
+
+![Screen 1 ](./assets/img1.png)
+![Screen 2 ](./assets/img2.png)
+![Screen 3](./assets/img3.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
