@@ -1,4 +1,4 @@
-# This applicaion Strickly Devloveped for Mobile View Only 
+# This application Strictly Developed for Mobile View Only 
 
 ![Screen 1 ](./assets/img1.png)
 ![Screen 2 ](./assets/img2.png)
