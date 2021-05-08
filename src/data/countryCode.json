@@ -1,0 +1,62 @@
+[
+    {
+    "name": "Afghanistan",
+    "value": "+93",
+    "label": "AF"
+    },
+    {
+    "name": "Chile",
+    "value": "+56",
+    "label": "CL"
+    },
+    {
+    "name": "Ecuador",
+    "value": "+593",
+    "label": "EC"
+    },
+    {
+    "name": "Egypt",
+    "value": "+20",
+    "label": "EG"
+    },
+    {
+    "name": "Estonia",
+    "value": "+372",
+    "label": "EE"
+    },
+    {
+    "name": "France",
+    "value": "+33",
+    "label": "FR"
+    },
+    {
+    "name": "Germany",
+    "value": "+49",
+    "label": "DE"
+    },
+    {
+    "name": "Greece",
+    "value": "+30",
+    "label": "GR"
+    },
+    {
+    "name": "Guernsey",
+    "value": "+44",
+    "label": "GG"
+    },
+    {
+    "name": "Hungary",
+    "value": "+36",
+    "label": "HU"
+    },
+    {
+    "name": "India",
+    "value": "+91",
+    "label": "IN"
+    },
+    {
+    "name": "Iran, Islamic Republic of Persian Gulf",
+    "value": "+98",
+    "label": "IR"
+    }
+    ]
