@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         padding: "0px",
         margin: "0px",
-        filter: 'none! important'
+        filter: 'none !important'
 
     },
     label: {
@@ -134,23 +134,17 @@ const Home = (props) => {
                             </button>
                         </Grid>
                         {details.likes.profiles.map((profile, index) => (
-                            <Grid item xs={6} sm={6} md={3} lg={3}>
-                                <div key={index} style={{ backgroundImage: `linear-gradient(90deg, rgba(105,105,105,1), rgba(105,105,105,0.95), rgba(105,105,105,0.9)),url(${profile.avatar})`, border: '1px solid black', height: "22vh", backgroundSize: "cover", borderRadius: "10px" }}>
+                            <Grid item xs={6} sm={6} md={3} lg={3} key={index}>
+                                <div style={{ position: 'relative' }}>
+                                    <div style={{ position: 'abbsolute', backgroundImage: `url(${profile.avatar})`, filter: "blur(5px)", zIndex: -1, border: '1px solid black', height: "24vh", backgroundSize: "cover", borderRadius: "10px" }}>
+                                    </div>
                                     <div className={classes.detailDivBlur}>
-                                        <h3 key={index} className={classes.blurName} >{profile.first_name}</h3>
+                                        <h3 className={classes.blurName} style={{ filter: 'none', zIndex: 51, position: 'absolute', top: '85%' }}>{profile.first_name}</h3>
                                     </div>
                                 </div>
-
                             </Grid>
-                        ))
-                        }
-
-
-
+                        ))}
                     </Grid>
-
-
-
                 </div>
                 <Footer />
             </Fragment>)

@@ -75,6 +75,7 @@ const VerifyOtp = (props) => {
     const handleChange = (e) => {
         if (otp.length > 3) {
             alert('Otp cannot be greater than 4');
+            setOtp('');
         }
         else {
             setOtp(e.target.value);
