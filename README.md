@@ -20,7 +20,7 @@ Make sure you have [Node](https://nodejs.org/en/) and [git](https://git-scm.com/
 - Clone the repo:
 
   ```bash
-  git clone https://github.com/sagarjsr/asile-tech-challenge.git
+  git clone https://github.com/sagarjsr/aisle-tech-challenge.git
   cd aisle-tech-challenge
   ```
 
