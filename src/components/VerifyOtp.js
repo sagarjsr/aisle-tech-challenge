@@ -70,7 +70,7 @@ const VerifyOtp = (props) => {
         } else {
             setTimer(0);
         }
-    });
+    },[timer]);
 
     const handleChange = (e) => {
         if (otp.length > 3) {
@@ -98,7 +98,7 @@ const VerifyOtp = (props) => {
             .post(apiUrl, data, { headers: headers }, { validateStatus: false })
             .then((response) => {
                 if (response.data.token !== null) {
-                    console.log("ssss" + response.data.token)
+                    // console.log("ssss" + response.data.token)
                     
                     
                     history.push("/home")
@@ -111,7 +111,7 @@ const VerifyOtp = (props) => {
             })
             .catch((err) => {
                 if (err.response) {
-                    console.log("otp login", err.response);
+                    // console.log("otp login", err.response);
                 }
             });
 

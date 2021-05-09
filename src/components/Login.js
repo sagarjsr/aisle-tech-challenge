@@ -18,17 +18,17 @@ const useStyles = makeStyles((theme) => ({
         maxHeight: '40px',
         minWidth: '30px',
         minHeight: '30px',
-        marginLeft:"2%"
+        marginLeft: "2%"
     },
     select: {
         maxWidth: '110px',
         maxHeight: '30px',
         minWidth: '100px',
         minHeight: '30px',
-        
+
     },
     getOtp: {
-        fontSize: '18px', fontWeight:400, margin: "0 !important",
+        fontSize: '18px', fontWeight: 400, margin: "0 !important",
         padding: 0,
         [theme.breakpoints.down('md')]: {
             fontSize: '20px', fontWeight: 600, margin: "0 !important",
@@ -59,16 +59,16 @@ const Login = (props) => {
     });
 
     const handleChange = (name) => (e) => {
-        if(name === 'countryCode'){
-            alert('Currently Operational only in Inda');      
+        if (name === 'countryCode') {
+            alert('Currently Operational only in Inda');
         }
-       else if ((userData.phoneNumber).length > 9) {
+        else if ((userData.phoneNumber).length > 9) {
             alert('Phone Number cannot be greater than 10');
             setUserData({ ...userData, [name]: "" });
 
         }
         else {
-           
+
             setUserData({ ...userData, [name]: e.target.value });
         }
 
@@ -92,9 +92,9 @@ const Login = (props) => {
 
                     localStorage.setItem("phone", userData.phoneNumber)
                     history.push({
-                        pathname : "/verify-otp",
-                        state : userData.phoneNumber
-                })
+                        pathname: "/verify-otp",
+                        state: userData.phoneNumber
+                    })
                 }
                 else {
                     alert("Incorrect Phone Number");
@@ -103,7 +103,7 @@ const Login = (props) => {
             })
             .catch((err) => {
                 if (err.response) {
-                    console.log("error login", err.response);
+                    // console.log("error login", err.response);
                 }
             });
 
@@ -118,7 +118,7 @@ const Login = (props) => {
             <p className={classes.getOtp}>Get OTP</p>
             <p className={classes.phone}>Enter Your </p>
             <p className={classes.phone}>Phone Number</p>
-            <form style={{marginTop: '3%' }}>
+            <form style={{ marginTop: '3%' }}>
                 <Grid container spacing={3}>
                     <Grid item xs={3} sm={6}>
                         <TextField
@@ -142,7 +142,7 @@ const Login = (props) => {
                     </Grid>
                     <Grid item xs={7} sm={3}>
                         <TextField id="phoneNo"
-                            style={{ marginLeft: "10%"}}
+                            style={{ marginLeft: "10%" }}
                             value={userData.phoneNumber}
                             type="number"
                             label="Phone Number"
@@ -151,7 +151,7 @@ const Login = (props) => {
                     </Grid>
                     <Button variant="contained" className={classes.button} onClick={handleSubmit}>
                         Continue
-                </Button>
+                    </Button>
 
 
 
