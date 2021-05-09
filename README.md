@@ -6,10 +6,11 @@
 
 ### Screenshot
 
-![Screen 1 ](./assets/img1.png)
-![Screen 2 ](./assets/img2.png)
-![Screen 3](./assets/img3.png)
+<img src="./assets/img1.png" alt="screen1" width="300" height="500" />
+<img src="./assets/img2.png" alt="screen2" width="300" height="500" />
+<img src="./assets/img3.png" alt="screem3" width="300" height="500" />
 
+#
 ## How to ...
 
 ### ... run locally?
